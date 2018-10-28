@@ -4,24 +4,25 @@ using namespace std;
 template<typename One, typename Two>
 class HashNode
 {
-	One value;
-	Two key;
+	
 public:
+	Two value;
+	One key;
 	HashNode()
 	{
 		this->value = NULL;
 		this->key = NULL;
 	}
-	HashNode(One value, Two key)
+	HashNode(One key, Two value)
 	{
 		this->value = value;
 		this->key = key;
 	}
-	One GetValue()
+	Two GetValue()
 	{
 		return this->value;
 	}
-	Two GetKey()
+	One GetKey()
 	{
 		return this->key;
 	}
